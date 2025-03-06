@@ -21,6 +21,7 @@ docs = text_splitter.split_documents(documents)
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vector_store = FAISS.from_documents(docs, embeddings)
 llm = OllamaLLM(model="qwq", base_url="http://localhost:11434")
+#llm = OllamaLLM(model="phi4", base_url="http://localhost:11434")
 
 
 @app.route("/")

@@ -6,3 +6,6 @@ faiss-cpu
 sentence-transformers
 beautifulsoup4
 flask
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
